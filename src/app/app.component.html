@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+All Users
+<ul>
+	<li *ngFor="let user of users">
+		<div >
+			{{ user.name }}
+		</div>
+	</li>
+</ul>
+
+Users with only a=1, b=2, c=3, d=0
+<ul>
+	<li *ngFor="let user of users">
+		<div *ngIf="user.a === 1 && user.b === 2 && user.c === 3 && user.d === 0">
+			{{ user.name }}
+		</div>
+	</li>
+</ul>
